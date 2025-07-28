@@ -81,3 +81,23 @@ WHERE e.salary = (
     FROM employee 
     WHERE departmentId = e.departmentId
 );
+
+SELECT * FROM employee e ;
+
+WITH rank_salary AS (
+	SELECT 
+		*,
+		RANK() OVER (PARTITION BY departmentid ORDER BY salary DESC) AS rk
+	FROM 
+		employee
+)
+SELECT
+	d.name AS Department,
+	r.name AS Employee,
+	r.salary AS Salary
+FROM
+	rank_salary r
+	JOIN department d ON r.departmentid = d.id
+WHERE
+	r.rk = 1
+;
