@@ -3,8 +3,8 @@
 3. **178. Rank Scores**
 4. **180. Consecutive Numbers**
 5. **534. Game Play Analysis III**
-6. **579. Find Cumulative Salary of an Employee** Done
-7. **615. Average Salary: Departments VS Company**
+6. **579. Find Cumulative Salary of an Employee**
+7. **615. Average Salary: Departments VS Company** @
 8. **1082. Sales Analysis I**
 9. **1303. Find the Team Size**
 10. **1709. Biggest Window Between Visits**
